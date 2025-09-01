@@ -1,0 +1,30 @@
+{
+  "name": "my-next14-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "prisma generate && prisma migrate dev && prisma db seed && next build --turbopack",
+    "start": "next start"
+  },
+"prisma": {
+  "seed": "node prisma/seed.js"
+},
+  "dependencies": {
+    "@iconscout/unicons": "^4.2.0",
+    "@prisma/client": "^6.15.0",
+    "next": "15.5.2",
+    "prisma": "^6.15.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
