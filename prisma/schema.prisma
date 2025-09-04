@@ -21,6 +21,7 @@ model User {
   username String @unique
   avatar String
   Post Post[]
+  comments Comment[]
 }
 
 model Post {
@@ -34,4 +35,20 @@ model Post {
   markdown String
   authorId Int
   author User @relation(fields: [authorId], references: [id])
+  comments Comment[]
+  likes Int @default(0)
+}
+
+model Comment {
+  id Int @id @default(autoincrement())
+  text String 
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  authorId Int
+  author User @relation(fields: [authorId], references: [id])
+  postId Int
+  post Post @relation(fields: [postId], references: [id])
+  parentId Int?
+  parent Comment? @relation("commentChildren", fields: [parentId], references: [id])
+  children Comment[] @relation("commentChildren")
 }

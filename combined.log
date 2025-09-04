@@ -420,3 +420,5 @@
 {"error":{"clientVersion":"6.15.0","code":"P2021","meta":{"modelName":"Post","table":"public.Post"},"name":"PrismaClientKnownRequestError"},"level":"error","message":"Falha ao obter posts"}
 {"error":{"clientVersion":"6.15.0","code":"P2021","meta":{"modelName":"Post","table":"public.Post"},"name":"PrismaClientKnownRequestError"},"level":"error","message":"Falha ao obter posts"}
 {"error":{"clientVersion":"6.15.0","name":"PrismaClientInitializationError"},"level":"error","message":"Falha ao obter posts"}
+{"error":{"clientVersion":"6.15.0","name":"PrismaClientInitializationError"},"level":"error","message":"Falha ao obter posts"}
+{"error":{"clientVersion":"6.15.0","name":"PrismaClientInitializationError"},"level":"error","message":"Falha ao obter posts"}
