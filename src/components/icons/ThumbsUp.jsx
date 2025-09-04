@@ -1,4 +1,4 @@
-export const ThumbsUp = () => {
+export default ThumbsUp = () => {
     return (
         <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="path-1-inside-1_523_12165" fill="white">
